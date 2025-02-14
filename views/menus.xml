@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <menuitem name="School Managemant" id="menu_school_tab" sequence="10">
+            <menuitem
+            id="model_student_menu"
+            name="Student Name"
+            sequence="10"
+            action="ct_student_action"
+            />
+            <menuitem
+            id="model_school_menu"
+            name="School Name"
+            sequence="10"
+            action="ct_school_action"
+            />
+        </menuitem>
+    </data>
+</odoo>
