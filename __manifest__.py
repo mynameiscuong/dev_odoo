@@ -1,5 +1,5 @@
 {
-    'name': 'School Manage',
+    'name': 'school_management',
     'description': 'SChool Management By Cuong',
     'version': '1.0',
     'author': 'Cuong',
@@ -7,16 +7,24 @@
     'sequence':-1,
     'depends': ['web','base'],
     'data': [
-        'data/ct.student.csv',
         'security/ir.model.access.csv',
+        # 'data/school_data.xml',
+        # 'data/classs_data.xml',
+        # 'data/student_data.xml',
+        'data/ct.school.csv',
+        'data/ct.classs.csv',
+        'data/ct.student.csv',
+
+        
+
+        'report/report_student_list.xml',
+        'report/student_report.xml',
+
         'views/student_view.xml',
         'views/menus.xml',
         # 'views/school_view.xml',
-        
-        # 'views/headers.xml',
-        # 'views/portal_my_home_dashboard.xml',
-        # 'views/shop.xml',
-        # 'data/theme_data.xml',
+
+
     ],
     'installable': True,
     'application': True,

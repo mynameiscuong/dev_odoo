@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Học sinh 1 -->
+        <record id="student_1" model="ct.student">
+            <field name="name">Trần Ngọc Cường</field>
+            <field name="age">21</field>
+            <field name="class_id" ref="classs_1"/>
+            <!-- Tham chiếu class_id từ class_data.xml -->
+            <field name="school_ids" eval="[(6, 0, [ref('school_management.school_1')])]"/>
+            <!-- Many2many với trường -->
+        </record>
+        <!-- Học sinh 2 -->
+        <record id="student_2" model="ct.student">
+            <field name="name">Trần Tiến Đạt</field>
+            <field name="age">21</field>
+            <field name="class_id" ref="classs_2"/>
+            <!-- Tham chiếu class_id từ class_data.xml -->
+            <field name="school_ids" eval="[(6, 0, [ref('school_management.school_2')])]"/>
+            <!-- Many2many với trường -->
+        </record>
+    </data>
+</odoo>

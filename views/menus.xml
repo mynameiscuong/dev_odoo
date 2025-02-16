@@ -14,6 +14,12 @@
             sequence="10"
             action="ct_school_action"
             />
+            <menuitem
+            id="model_classs_menu"
+            name="Classs Name"
+            sequence="10"
+            action="ct_classs_action"
+            />
         </menuitem>
     </data>
 </odoo>

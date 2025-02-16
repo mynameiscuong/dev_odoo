@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="ct_classs_action" model="ir.actions.act_window">
+            <field name="name">classs</field>
+            <field name="res_model">ct.classs</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="ct_classs_view_tree" model="ir.ui.view">
+            <field name="name">ct.classs.view.tree</field>
+            <field name="model">ct.classs</field>
+            <field name="arch" type="xml">
+                <tree string="">
+                    <field name="name"></field>
+                </tree>
+            </field>
+        </record>
+        <record id="ct_classs_view_form" model="ir.ui.view">
+            <field name="name">ct.classs.view.form</field>
+            <field name="model">ct.classs</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <sheet>
+                        <group>
+                            <field name="name"></field>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

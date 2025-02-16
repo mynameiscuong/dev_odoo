@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="classs_1" model="ct.classs">
+            <field name="name">CN21</field>
+            <field name="school_id" ref="school_management.school_1"/>
+            <!-- Tham chiếu đúng ID -->
+        </record>
+        <record id="classs_2" model="ct.classs">
+            <field name="name">KM21</field>
+            <field name="school_id" ref="school_management.school_2"/>
+            <!-- Tham chiếu đúng ID -->
+        </record>
+    </data>
+</odoo>
