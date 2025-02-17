@@ -1,4 +1,10 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_ct_school,ct.school,model_ct_school,base.group_user,1,1,1,1
-access_ct_student,ct.student,model_ct_student,base.group_user,1,1,1,1
-access_ct_classs,ct.classs,model_ct_classs,base.group_user,1,1,1,1
+access_ct_school,ct.school,model_ct_school,base.group_user,1,0,0,0
+access_ct_student,ct.student,model_ct_student,base.group_user,1,0,0,0
+access_ct_classs,ct.classs,model_ct_classs,base.group_user,1,0,0,0
+
+access_ct_student_teacher,Access Student for Teacher,model_ct_student,school_management.group_teacher_school,1,1,1,1
+access_ct_classs_teacher,Access Student for Teacher,model_ct_classs,school_management.group_teacher_school,1,1,1,1
+access_ct_school_teacher,Access Student for Teacher,model_ct_school,school_management.group_teacher_school,1,1,1,1
+
+access_ct_student_school,Access Student for Class,model_ct_student,school_management.group_student_school,1,0,0,0

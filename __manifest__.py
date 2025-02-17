@@ -7,6 +7,7 @@
     'sequence':-1,
     'depends': ['web','base'],
     'data': [
+        'security/security.xml',
         'security/ir.model.access.csv',
         # 'data/school_data.xml',
         # 'data/classs_data.xml',
