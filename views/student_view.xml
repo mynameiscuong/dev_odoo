@@ -35,8 +35,11 @@
             <field name="arch" type="xml">
                 <tree string="Students">
                     <field name="name"/>
+                    <field name="email"/>
                     <field name="age"/>
                     <field name="class_id"/>
+                    <field name="enrollment_date"/>
+                    <field name="state"/>
                 </tree>
             </field>
         </record>
@@ -50,10 +53,14 @@
                         <group class="oe_title">
                             <field name="name" class="oe_inline"/>
                         </group>
+                        <group class="oe_title">
+                            <field name="email" class="oe_inline"/>
+                        </group>
                         <group>
                             <group>
                                 <field name="age" class="oe_highlight"/>
                                 <field name="class_id"/>
+                                <field name="enrollment_date" class="oe_highlight"/>
                             </group>
                         </group>
                     </sheet>

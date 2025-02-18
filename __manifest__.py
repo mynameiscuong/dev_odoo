@@ -5,7 +5,7 @@
     'author': 'Cuong',
     'category': 'Basic',
     'sequence':-1,
-    'depends': ['web','base'],
+    'depends': ['web','base','mail'],
     'data': [
         'security/security.xml',
         'security/ir.model.access.csv',
@@ -16,6 +16,8 @@
         'data/ct.classs.csv',
         'data/ct.student.csv',
 
+        'data/email_template.xml',
+        'data/cron_jobs.xml',
         
 
         'report/report_student_list.xml',
